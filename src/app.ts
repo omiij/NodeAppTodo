@@ -1,5 +1,5 @@
-import express, { Application } from "express";
-import bodyParser from "body-parser";
+import express, { Application } from "express"; // Default import
+import bodyParser from "body-parser"; // Change to default import as well
 import todosRoute from "./Router/todos";
 
 const app: Application = express();
