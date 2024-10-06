@@ -29,28 +29,28 @@ AppDataSource.initialize()
     });
 
     // Start express server
-    app.listen(3000, () => {
+    app.listen(8080, () => {
       console.log(
-        "Express server started on port 3000. Open http://localhost:3000/users to see results."
+        "Express server started on port 8080. Open http://localhost:8080/users to see results."
       );
     });
 
     // Insert new users for testing
-    await AppDataSource.manager.save(
-      AppDataSource.manager.create(User, {
-        name: "Timber",
-        email: "oj@645.cm",
-        age: 26,
-      })
-    );
+    // await AppDataSource.manager.save(
+    //   AppDataSource.manager.create(User, {
+    //     name: "Timber",
+    //     email: "oj@645.cm",
+    //     age: 26,
+    //   })
+    // );
 
-    await AppDataSource.manager.save(
-      AppDataSource.manager.create(User, {
-        name: "oonka",
-        email: "oj@6asd45.cm",
-        age: 29,
-      })
-    );
+    // await AppDataSource.manager.save(
+    //   AppDataSource.manager.create(User, {
+    //     name: "oonka",
+    //     email: "oj@6asd45.cm",
+    //     age: 29,
+    //   })
+    // );
   })
   .catch((error) =>
     console.log("Error during DataSource initialization:", error)

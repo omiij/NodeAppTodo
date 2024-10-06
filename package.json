@@ -11,8 +11,8 @@
       "migration:run": "ts-node ./node_modules/typeorm/cli.js migration:run -d src/data-source.ts",
       "migration:revert": "ts-node ./node_modules/typeorm/cli.js migration:revert -d src/data-source.ts",
       "schema:sync": "npm run typeorm schema:sync -- -d src/data-source.ts",
-      "migration:show":"npm run typeorm migration:show -- -d src/data-source.ts",
-      "migration:create":"npm run typeorm migration:create"
+      "migration:show": "npm run typeorm migration:show -- -d src/data-source.ts",
+      "migration:create": "npm run typeorm migration:create"
    },
    "keywords": [],
    "author": "",
@@ -20,6 +20,7 @@
    "dependencies": {
       "@types/pg": "^8.11.10",
       "body-parser": "^1.19.1",
+      "dotenv": "^16.4.5",
       "express": "^4.17.2",
       "pg": "^8.4.0",
       "pg-hstore": "^2.3.4",
